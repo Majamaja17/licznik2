@@ -1,0 +1,119 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container_small {
+      max-width: 70%;
+      margin: 0 auto;
+}
+
+//col
+
+[class*='col-'] {
+  float: left;
+}
+
+$grid-columns: 12;
+
+//lg
+
+@for $i from 1 through 12 {
+ 
+    .col-lg-#{$i} { 
+        width: 100% / $grid-columns * $i;
+        flex-basis: 100% / $grid-columns * $i;
+    }
+}
+
+@for $i from 1 through 12 {
+ 
+    .col-lg-offset-#{$i} { 
+        margin-left: 100% / $grid-columns * $i;
+    }
+}
+
+.none_lg {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @for $i from 1 through 12 {
+ 
+    .col-md-#{$i} { 
+        width: 100% / $grid-columns * $i;
+        flex-basis: 100% / $grid-columns * $i;
+    }
+  }
+
+  @for $i from 1 through 12 {
+   
+      .col-md-offset-#{$i} { 
+          margin-left: 100% / $grid-columns * $i;
+      }
+  }
+
+  .none_md {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  @for $i from 1 through 12 {
+ 
+    .col-sm-#{$i} { 
+        width: 100% / $grid-columns * $i;
+        flex-basis: 100% / $grid-columns * $i;
+    }
+  }
+
+  @for $i from 1 through 12 {
+   
+      .col-sm-offset-#{$i} { 
+          margin-left: 100% / $grid-columns * $i;
+      }
+  }
+
+  .none_sm {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  @for $i from 1 through 12 {
+ 
+    .col-xs-#{$i} { 
+        width: 100% / $grid-columns * $i;
+        flex-basis: 100% / $grid-columns * $i;
+    }
+  }
+
+  @for $i from 1 through 12 {
+   
+      .col-xs-offset-#{$i} { 
+          margin-left: 100% / $grid-columns * $i;
+      }
+  }
+
+  .none_xs {
+    display: none;
+  }
+}

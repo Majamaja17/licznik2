@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext');
+
+// globals
+@import 'partials/_grid.scss';
+@import 'partials/_variables.scss';
+@import 'partials/_global.scss';
+
+// components
+@import 'partials/_buttons.scss';
+@import 'partials/_progressBar.scss';
+
+// sections
+@import "partials/_onlySection.scss";

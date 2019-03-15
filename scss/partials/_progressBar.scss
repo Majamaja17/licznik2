@@ -1,0 +1,17 @@
+.progress {
+	height: 50px;
+	background-image: url(../images/ruler.png);
+	box-shadow: 0 -1px 1px #c0bfbc inset;
+	max-width: 300px;
+	margin: 50px 0 0;
+}
+
+.bar {
+	height: 50px;
+    width: 0px; 
+    color: white; 
+    text-align: center;
+	box-shadow: 0 -1px 1px #333;
+	background-color: #666;
+	max-width: 300px;
+}

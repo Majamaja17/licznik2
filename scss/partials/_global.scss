@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+.row::before,
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+body {
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+	background-image: url(../images/bg.jpg);
+}
